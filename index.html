@@ -7,26 +7,41 @@
     <title>TheLeast</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
+     <!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46276485 = new Ya.Metrika({
+                    id:46276485,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/46276485" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
   </head>
   <body>
      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-         <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a> -->
         </div>
-         <!--<div class="collapse navbar-collapse">
-         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
       </div>
     </div>
 
@@ -36,7 +51,7 @@
         <h1>TheLeast</h1>
         <p class="lead">Правила игры:<br>Нужно в течение 2-х секунд выбрать наименьшее число.<br>За каждый правильный ответ дается 10 очков.
         <br>Если ответ неверный или прошло больше 2-х секунд, игра заканчивается.<br>Выберите уровень сложности:</p>
-      	    <div class="col-xs-12 "><!-- Indicates a successful or positive action -->
+      	    <div class="col-xs-12 ">
 			<a href="game-light.html"><button type="button" class="btn btn-success">Простой</button></a>
 			<a href="game-middle.html"><button type="button" class="btn btn-success">Средний</button></a>
 			<a href="game-hard.html"><button type="button" class="btn btn-success">Сложный</button></a>
@@ -46,10 +61,7 @@
 
     </div><!-- /.container -->
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

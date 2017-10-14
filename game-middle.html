@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TheLeast</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <script src="js/game.js"></script>
+      <!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46276485 = new Ya.Metrika({
+                    id:46276485,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/46276485" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+  </head>
+  <body>
+     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row starter-template">
+        <h1>TheLeast</h1>
+        <p class="game-start">Поехали!</p>
+        <p class="game-over">Игра окончена</p>
+        <h3>Ваш счет:</h3>
+        <h3 id="score">0</h3>
+		<table class="table table-bordered game-table">
+			<tr><td class="num">5</td><td class="num">7</td></tr>
+			<tr><td class="num">2</td><td class="num">3</td></tr>
+		</table>
+		<div class="col-xs-12 play-again">
+			<a href="game-middle.html"><button type="button" class="btn btn-success">Начать заново</button></a>
+			<a href="index.html"><button type="button" class="btn btn-success">Новый уровень</button></a>	
+		</div>	
+	  </div>
+
+    </div><!-- /.container -->
+    
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -22,31 +22,31 @@ $(".num").click(function(){
 	if (clicknum == min) {
 		score = score + 10;
 		document.getElementById('score').innerHTML = + score;
-	} else {
-		 clearInterval();
-		 $('.game-start').hide();
-		 $('.game-table').hide();
-		 $('.game-over').show();
-		 $('.play-again').show()
-	}
-	var array = [];
-	array[0] = randomInteger(0, 25);
-	for (i = 1; i < tds.length; i++) {
-		array[i] = randomInteger(0, 25);
-		for (var j = 0; j < i; j++) {
+		var array = [];
+		array[0] = randomInteger(0, 25);
+		for (i = 1; i < tds.length; i++) {
+			array[i] = randomInteger(0, 25);
+			for (var j = 0; j < i; j++) {
 			if (array[i] == array[j]) {
 				array[j] = array[j] + 1 + j;
 			}
 		}
 		
+		}
+	
+		for (i = 0; i < tds.length; i++) {
+			tds[i].innerHTML = Number(array[i]);
+		}
+	} else {
+		 //clearInterval(mytimer);
+		 $('.game-start').hide();
+		 $('.game-over').show();
+		 $('.play-again').show();
 	}
 	
-	for (i = 0; i < tds.length; i++) {
-		tds[i].innerHTML = Number(array[i]);
-	}
 }); 
 
-setInterval(function() {                                 
+var mytimer = setInterval(function() {                                 
 	if (clicked == 1) {
       clicked = 0;
     } else {
@@ -54,7 +54,7 @@ setInterval(function() {
 	  $('.game-table').hide();
 	  $('.game-over').show();
 	  $('.play-again').show();
-	  clearInterval();
+	  clearInterval(mytimer);
     }
   }, 2000);
 });
